@@ -58,10 +58,11 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-nav ul li a:hover::after{
+nav li a.checked::after{
   content: " ";
-  width: 0%;
+  width: 101%;
   height: 4px;
+  font-weight: bold;
   background-color: #FFC400;
   position: absolute;
   bottom: 0;
@@ -69,9 +70,14 @@ nav ul li a:hover::after{
   transition: 0.5s;
 }
 
-nav ul li a:hover::after{
+/*
+nav li a.checked::after{
   width: 101%;
-  font-weight: bold;
+}
+*/
+
+nav li.checked1::after{
+ font-weight: bold;
 }
 
 .AbaixoDoHeader {
