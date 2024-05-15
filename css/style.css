@@ -365,52 +365,44 @@ nav li.checked1::after{
 }
 
 .sessaoCards{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
   padding: 3%;
-  
 }
 
 .containerCards{
+  margin: 0 auto;
   width: 270px;
   height: 400px;
   background: #FFFFFF;
   box-shadow: 0px 4px 12px 5px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   cursor: pointer;
-  transition: .5s
+  transition: .5s;
+  margin-bottom: 5%;
 }
 
 .containerCards:hover{
   background: #FA9C05;
   box-shadow: 0px 4px 12px 5px #FFC400;
 }
-
-.cardsImg img{
-  display: flex;
-  justify-content: center;
-
-  width: 100px;
-  height: 100px;
+.cardsImg {
+  text-align: center;
 }
-
 .cardsImg img{
   max-width: 100%;
   object-fit: cover;
+  padding-top: 1%;
 }
 
 .textoCard{
-  display: flex;
-  justify-content: center;
-  width: 220px;
-  height: 180px;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 33px;
   color: black;
-  transition: .5s
+  transition: .5s;
+  text-align: center;
 }
 
 .textoCard p:hover{
